@@ -1,0 +1,118 @@
+div#subtitle {
+
+}
+div#subtitle .wrap {
+max-width: 100%;
+margin-bottom: 200px;
+}
+div#subtitle .wbutton {
+  
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 15px;
+  top: 90%;
+  left: calc(50% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#subtitle button {
+  
+  position: static;
+  transform: translate(0, 0);
+}
+div#subtitle button.slick-next {
+  right: 25px;
+}
+div#subtitle .slick-prev{
+ left: 25px;
+ z-index: 1;
+}
+div#subtitle .slick-prev::before {
+  content:"";
+  background-image: url(../img/left.svg);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: contain;
+}
+div#subtitle .slick-next::before {
+  content:"";
+  background-image: url(../img/right.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+}
+div#subtitle .btn_pause{
+    background:url('../img/pause.svg')no-repeat;
+    width: 20px; height: 20px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+    order: 2;
+}
+div#subtitle .btn_pause.on{
+    background: url('../img/play.svg')no-repeat;
+    width: 20px; height: 20px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+}
+div#subtitle .slick-next{
+
+  order: 3;
+}
+div#subtitle .slick-dots li {
+  
+  width: 76px;
+  height: 54px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 1s;
+}
+div#subtitle .slick-dots li.slick-active {
+  
+  width: calc(76px * 1.5);
+  height: calc(54px * 1.5);
+}
+div#subtitle .wrap img {
+
+  /*! transform: scale(1.1); */
+  width: 100%;
+  height: 100%;
+}
+
+div#subtitle .wrap .slick-dots{
+  bottom: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 81px;
+}
+div#subtitle .wrap .slick-dots button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: initial;
+}
+div#subtitle .wrap .slick-dots button::before{
+  position: static;
+  width: fit-content;
+  height: 6px;
+  line-height: initial;
+}
+div#subtitle .wrap .slick-dots li.slick-active button {
+  border:1px solid white;
+  border-radius: 50%;
+}
+div#subtitle .wrap .slick-dots li.slick-active button::before{
+  
+}
