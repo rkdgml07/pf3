@@ -1,0 +1,289 @@
+header {
+  position: relative;
+}
+
+header .wrap {
+
+}
+
+header .wrap nav {
+
+  grid-template-columns: 1fr auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-top: 10px;
+  row-gap: 10px;
+}
+header .wrap nav h1 {
+
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: center;
+  width: 100%;
+}
+header .wrap nav h1::before{
+ 
+}
+header .wrap nav h1:hover::before{
+ 
+}
+header .wrap nav h1 a {
+  background-image: url(../img/hitelogo.png);
+  font-size: 0;
+  width: 149px;
+  display: block;
+  height: 56px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+header .wrap nav h1 a span {
+  
+}
+header .wrap nav ul.gnb {
+ 
+  grid-column: 1;
+  grid-row: 2;
+}
+header .wrap nav ul.gnb li {
+  
+  padding: 30px 30px;
+}
+header .wrap nav ul.gnb li a {
+ 
+}
+header .wrap nav ul.gnb li a:hover{
+ 
+}
+
+/* 기타메뉴 */
+header .wrap nav ul.enb {
+ 
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: right;
+}
+header .wrap nav ul.enb li {
+  
+  padding: 30px 18px;
+}
+header .wrap nav ul.enb li a {
+
+}
+header .wrap nav ul.enb li a:hover {
+ 
+}
+header .wrap nav ul.enb li:nth-child(1) a::after,header .wrap nav ul.enb li:nth-child(2) a::after{
+
+}
+/* wgnb */
+header .wrap nav .wgnb{
+  /*! background-color: rgba(18,83,250,0.8); */
+  width: calc(100vw - 17px);
+  position: absolute;
+  left: 0;
+  top: 152px;
+  z-index: 1;
+  height: 270px;
+  overflow: hidden;
+}
+header .wrap nav .wgnb::before {
+  content:"";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18,83,250,0.8);
+} 
+header .wrap nav .wgnb *{
+
+}
+header .wrap nav .wgnb a {
+  
+  color: #fff;
+}
+header .wrap nav .wgnb .center .wsub> ul{
+  
+  height: 270px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: repeat(3,auto);
+}
+header .wrap nav .wgnb .center .wsub:nth-child(2) > ul {
+  grid-template-columns: repeat(3,auto);
+  display: grid;
+}
+header .wrap nav .wgnb .center .wsub> ul >li {
+  
+}
+header .wrap nav .wgnb .center .wsub> ul >li >a {
+  
+  display: block;
+  height: 100%;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+header .wrap nav .wgnb .center .wsub > ul > li > a::before {
+  content:"";
+  display: block;
+  width: 30px;
+  border-top: 1px solid;
+  margin-bottom: 8px;
+}
+header .wrap nav .wgnb li {
+  
+}
+header .wrap nav .wgnb .center .wsub> ul >li:nth-child(n+4) {
+  grid-row: 1 / span 3 !important;
+  border-left: 0.5px solid #fff;
+}
+header .wrap nav .wgnb .center .wsub> ul >li:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+header .wrap nav .wgnb .center .wsub> ul >li:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+header .wrap nav .wgnb .center .wsub> ul >li:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+header .wrap nav .wgnb .center{
+
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.wgnbShow{
+
+}
+.close{
+
+}
+header .wrap nav .wgnb .wsub{
+
+}
+header .wrap nav .wgnb .wsub:nth-child(2){
+  
+}
+header .wrap nav .wgnb .wsub:nth-child(2) ul.sub1{
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1>li:nth-child(1){
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1 > li:nth-child(1) div{
+
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1 > li:nth-child(1) div a{
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1>li:nth-child(2){
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1>li:nth-child(3){
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1 > li:nth-child(3) ul.sub2{
+
+}
+header .wrap nav .wgnb .wsub{
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+header .wrap nav .wgnb .wsub:not(:first-child){
+  /*! display: none; */
+}
+header .wrap nav .wgnb h2{
+
+  display: none;
+}
+.currenH2{
+
+}
+header .wrap nav .wgnb h2::after{
+
+
+}
+header .wrap nav .wgnb h2.currenH2::after{
+
+}
+header .wrap nav .wgnb ul.sub1{
+
+}
+header .wrap nav .wgnb ul.sub1>li{
+
+}
+header .wrap nav .wgnb ul.sub1 > li:nth-child(-n+3){
+
+}
+header .wrap nav .wgnb ul.sub1 > li:hover{
+
+}
+header .wrap nav .wgnb ul.sub1>li:nth-child(n+4){
+
+}
+header .wrap nav .wgnb ul.sub1>li:nth-child(2){
+
+}
+header .wrap nav .wgnb ul.sub1>li:nth-child(3){
+
+}
+header .wrap nav .wgnb ul.sub1>li>a{
+
+}
+header .wrap nav .wgnb ul.sub1>li>a::before{
+
+}
+header .wrap nav .wgnb ul.sub1>li:nth-child(n+4) a{
+
+}
+header .wrap nav .wgnb ul.sub1>li:not(:first-child)>a{
+ 
+}
+header .wrap nav .wgnb ul.sub2{
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1 > li:nth-child(2) ul.sub2{
+
+}
+header .wrap nav .wsub:nth-child(2) ul.sub1 > li:nth-child(2) ul.sub2 li{
+
+}
+
+header .wrap nav .wgnb ul.sub2 li{
+  
+}
+header .wrap nav .wgnb ul.sub2 li a{
+
+}
+/* 기타메뉴 */
+header .wrap nav ul.enb {
+
+}
+header.headerFix .wrap nav ul.enb{
+  
+}
+header .wrap nav ul.enb li {
+  
+}
+header .wrap nav ul.enb li a {
+
+}
+header .wrap nav ul.enb li a:hover {
+
+}
+header .wrap nav ul.enb li:nth-child(1) a::after,header .wrap nav ul.enb li:nth-child(2) a::after{
+ 
+}
